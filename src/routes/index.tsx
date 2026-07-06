@@ -142,7 +142,7 @@ const STEPS = [
   {
     step: "01",
     title: "Kennenlernen & Auftragsklärung",
-    text: "Wir hören zu, stellen unbequeme Fragen und klären gemeinsam, wo Coaching wirklich wirkt – ehrlich, auch wenn die Antwort „kein Coaching" lautet.",
+    text: "Wir hören zu, stellen unbequeme Fragen und klären gemeinsam, wo Coaching wirklich wirkt – ehrlich, auch wenn die Antwort „kein Coaching“ lautet.",
   },
   {
     step: "02",
