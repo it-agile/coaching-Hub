@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
-  Anchor,
+  Waves,
   ArrowRight,
   MapPin,
   Compass,
@@ -174,7 +174,7 @@ function Index() {
               className="grid h-8 w-8 place-items-center rounded-md"
               style={{ background: "var(--gradient-copper)" }}
             >
-              <Anchor className="h-4 w-4 text-primary-foreground" />
+              <Waves className="h-4 w-4 text-primary-foreground" />
             </span>
             it-agile Coaching
           </a>
@@ -542,7 +542,7 @@ function Index() {
               className="grid h-7 w-7 place-items-center rounded-md"
               style={{ background: "var(--gradient-copper)" }}
             >
-              <Anchor className="h-3.5 w-3.5 text-primary-foreground" />
+              <Waves className="h-3.5 w-3.5 text-primary-foreground" />
             </span>
             it-agile Coaching
           </div>
