@@ -231,8 +231,7 @@ function Index() {
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
                 href="#coaches"
-                className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg transition-opacity hover:opacity-90"
-                style={{ background: "var(--gradient-copper)" }}
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg transition-opacity hover:opacity-90"
               >
                 Coaches kennenlernen
                 <ArrowRight className="h-4 w-4" />
