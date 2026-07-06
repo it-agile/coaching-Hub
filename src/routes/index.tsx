@@ -295,7 +295,7 @@ function Index() {
           <div className="flex flex-col justify-center p-8 md:p-12">
             <Quote className="mb-4 h-8 w-8 text-accent" />
             <p className="font-display text-2xl font-medium italic leading-snug md:text-3xl">
-              „{activeCoach.quote}"
+              „{activeCoach.quote}“
             </p>
             <div className="mt-6">
               <div className="font-display text-xl font-semibold">{activeCoach.name}</div>
