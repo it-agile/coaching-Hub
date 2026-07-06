@@ -341,8 +341,8 @@ function Index() {
               <div
                 className="absolute inset-x-0 bottom-0 p-6"
                 style={{
-                  background:
-                    "linear-gradient(to top, oklch(0.07 0.01 270 / 0.95) 20%, oklch(0.07 0.01 270 / 0.6) 60%, transparent)",
+                background:
+                    "linear-gradient(to top, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0.6) 60%, transparent)",
                 }}
               >
                 <div className="font-display text-xl font-semibold">{coach.name}</div>
