@@ -217,7 +217,7 @@ function Index() {
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-sm text-primary-foreground backdrop-blur-md">
               <MapPin className="h-3.5 w-3.5" />
-              Agile Coaching aus der Speicherstadt Hamburg
+              Wirkungsvolles Coaching aus der Speicherstadt Hamburg
             </div>
             <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-primary-foreground md:text-7xl">
               Menschen machen Agilität.
