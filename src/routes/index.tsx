@@ -194,8 +194,7 @@ function Index() {
           </nav>
           <a
             href="#kontakt"
-            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-            style={{ background: "var(--gradient-copper)" }}
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
             Erstgespräch
             <ArrowRight className="h-4 w-4" />
