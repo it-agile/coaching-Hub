@@ -20,7 +20,7 @@ import coachSven from "@/assets/coach-sven.jpg";
 import coachAlexandra from "@/assets/coach-alexandra.jpg";
 import coachAmelie from "@/assets/coach-amelie.jpg";
 import coachUrs from "@/assets/coach-urs.jpg";
-import coachClaudia from "@/assets/coach-claudia.jpg";
+import coachMyriam from "@/assets/coach-myriam.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -83,13 +83,13 @@ const COACHES: Coach[] = [
     image: coachUrs,
   },
   {
-    id: "claudia",
-    name: "Claudia Reitenbach",
-    role: "Agile Coach & Organisationsentwicklerin",
-    focus: ["Organisationsentwicklung", "Teamdynamik", "Konflikte"],
-    quote: "Hinter jedem Prozessproblem steckt eine menschliche Dynamik.",
-    bio: "Fokussiert auf die menschlichen Dynamiken in agilen Teams – von psychologischer Sicherheit bis Konfliktnavigation.",
-    image: coachClaudia,
+    id: "myriam",
+    name: "Myriam Tröster",
+    role: "Agile & Systemische Coach, Organisationsentwicklerin",
+    focus: ["Agile Transition", "Systemisches Coaching", "Organisationsentwicklung"],
+    quote: "Agilität ist eine Chance, gewohnte Denk- und Systemstrukturen zu verlassen.",
+    bio: "Begleitet Organisationen und Teams durch agile Transitionen. Systemische Coach und Organisationsentwicklerin mit einem Schwerpunkt auf agilen Wandlungsprozessen.",
+    image: coachMyriam,
   },
 ];
 
