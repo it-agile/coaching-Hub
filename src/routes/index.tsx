@@ -34,6 +34,7 @@ type Coach = {
   focus: string[];
   quote: string;
   bio: string;
+  shortBio: string;
   image: string;
 };
 
@@ -44,6 +45,7 @@ const FEATURED_COACH: Coach = {
   focus: ["Agile Coaching", "Kanban", "Mediation"],
   quote: "Konflikte sind wertvoll – eine Gelegenheit, gemeinsam zu wachsen.",
   bio: "Coacht seit 2012 Manager und Teams in agilen Methoden wie Scrum und Kanban. Akkreditierter Kanban Trainer und ausgebildeter Mediator auf Basis der gewaltfreien Kommunikation.",
+  shortBio: "Akkreditierter Kanban Trainer und Mediator: coacht Teams und Führungskräfte in agilen Methoden und gewaltfreier Kommunikation.",
   image: coachSebastian,
 };
 
@@ -55,6 +57,7 @@ const COACHES: Coach[] = [
     focus: ["Scrum", "Agile Leadership", "Skalierung"],
     quote: "Agilität lebt von echter Zusammenarbeit – nicht von Prozessen.",
     bio: "Begleitet seit den frühen 2000ern Teams und Organisationen bei der Einführung agiler Arbeitsweisen. Autor, Speaker und langjähriger Scrum-Experte mit Fokus auf wirksame Zusammenarbeit.",
+    shortBio: "Agile-Pionier mit Herz für Menschen. Begleitet Teams seit zwei Jahrzehnten zu echter Zusammenarbeit statt bloßer Prozessoptimierung.",
     image: coachStefan,
   },
   {
@@ -64,6 +67,7 @@ const COACHES: Coach[] = [
     focus: ["Agile Leadership", "Management 3.0", "Skalierung"],
     quote: "Führung heißt: Kontext schaffen, nicht kontrollieren.",
     bio: "Coacht Führungskräfte und Managementteams großer Organisationen auf dem Weg zu wirksamer, agiler Führung.",
+    shortBio: "Geschäftsführer und Führungs-Coach. Erfahrener Begleiter auf dem Weg zu agilen Führungskulturen und selbstverantwortlichen Organisationen.",
     image: coachSven,
   },
   {
@@ -73,6 +77,7 @@ const COACHES: Coach[] = [
     focus: ["Teamentwicklung", "Moderation", "Change-Begleitung"],
     quote: "Teams wachsen an echten Gesprächen – nicht an Meetings.",
     bio: "Begleitet Teams durch Veränderungsprozesse, gestaltet wirksame Workshops und entwickelt Zusammenarbeit, die trägt.",
+    shortBio: "Coach für Teamentwicklung und Veränderung. Gestaltet Räume, in denen echte Gespräche und tragfähige Zusammenarbeit entstehen.",
     image: coachAlexandra,
   },
   {
@@ -82,6 +87,7 @@ const COACHES: Coach[] = [
     focus: ["Agile HR", "People Ops", "Kulturwandel"],
     quote: "Neue Arbeitsweisen brauchen ein neues Personalverständnis.",
     bio: "Unterstützt Personalabteilungen dabei, ihre Rolle im agilen Kontext neu zu definieren und Selbstorganisation zu ermöglichen.",
+    shortBio: "Agile-HR-Spezialistin. Hilft People-Teams, ihre Rolle im agilen Kontext neu zu denken und Kulturwandel zu ermöglichen.",
     image: coachAmelie,
   },
   {
@@ -91,6 +97,7 @@ const COACHES: Coach[] = [
     focus: ["Kanban", "Flow", "Technische Exzellenz"],
     quote: "Sichtbarer Flow verändert Organisationen von innen.",
     bio: "Verbindet Prozessoptimierung mit handwerklicher Qualität und stellt teamübergreifende Lieferfähigkeit her.",
+    shortBio: "Kanban-Experte und Flow-Optimierer. Verbindet Prozesssichtbarkeit mit technischer Exzellenz für teamübergreifende Lieferfähigkeit.",
     image: coachUrs,
   },
   {
@@ -100,6 +107,7 @@ const COACHES: Coach[] = [
     focus: ["Agile Transition", "Systemisches Coaching", "Organisationsentwicklung"],
     quote: "Agilität ist eine Chance, gewohnte Denk- und Systemstrukturen zu verlassen.",
     bio: "Begleitet Organisationen und Teams durch agile Transitionen. Systemische Coach und Organisationsentwicklerin mit einem Schwerpunkt auf agilen Wandlungsprozessen.",
+    shortBio: "Systemische Coachin und Organisationsentwicklerin. Begleitet agile Transitionen mit Blick auf das Ganze und die Menschen darin.",
     image: coachMyriam,
   },
 ];
@@ -348,19 +356,34 @@ function Index() {
                 className="aspect-[4/5] w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
               />
               <div
-                className="absolute inset-x-0 bottom-0 p-6"
+                className="absolute inset-x-0 bottom-0 p-6 transition-opacity duration-300 group-hover:opacity-0"
                 style={{
-                background:
+                  background:
                     "linear-gradient(to top, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0.6) 60%, transparent)",
                 }}
               >
-                <div className="font-display text-xl font-semibold">{coach.name}</div>
+                <div className="font-display text-xl font-semibold text-primary-foreground">{coach.name}</div>
                 <div className="text-sm text-accent">{coach.role}</div>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {coach.focus.slice(0, 2).map((f) => (
                     <span
                       key={f}
                       className="rounded-full bg-secondary/80 px-2.5 py-0.5 text-xs text-secondary-foreground backdrop-blur-sm"
+                    >
+                      {f}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="absolute inset-0 flex flex-col justify-end bg-background/90 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="font-display text-xl font-semibold text-primary-foreground">{coach.name}</div>
+                <div className="text-sm text-accent">{coach.role}</div>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">{coach.shortBio}</p>
+                <div className="mt-4 flex flex-wrap gap-1.5">
+                  {coach.focus.map((f) => (
+                    <span
+                      key={f}
+                      className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs text-secondary-foreground"
                     >
                       {f}
                     </span>
