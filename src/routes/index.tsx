@@ -15,7 +15,7 @@ import {
 import heroImg from "@/assets/hero-speicherstadt.jpg";
 import imgTeam from "@/assets/coaching-team.jpg";
 import imgLeadership from "@/assets/coaching-leadership.jpg";
-import coachStefan from "@/assets/coach-stefan.jpg";
+import coachSebastian from "@/assets/coach-sebastian.jpg";
 import coachSven from "@/assets/coach-sven.jpg";
 import coachAlexandra from "@/assets/coach-alexandra.jpg";
 import coachAmelie from "@/assets/coach-amelie.jpg";
@@ -38,13 +38,13 @@ type Coach = {
 
 const COACHES: Coach[] = [
   {
-    id: "stefan",
-    name: "Stefan Roock",
-    role: "Mitgründer & Agile Coach",
-    focus: ["Agile Transformation", "Product Ownership", "Scrum"],
-    quote: "Agilität ist kein Prozess, sondern eine Haltung.",
-    bio: "Begleitet seit 2005 Organisationen durch agile Transformationen. Co-Autor mehrerer Standardwerke zu Scrum und agiler Führung.",
-    image: coachStefan,
+    id: "sebastian",
+    name: "Sebastian Keller",
+    role: "Agile Coach, Trainer & Mediator",
+    focus: ["Agile Coaching", "Kanban", "Mediation"],
+    quote: "Konflikte sind wertvoll – eine Gelegenheit, gemeinsam zu wachsen.",
+    bio: "Coacht seit 2012 Manager und Teams in agilen Methoden wie Scrum und Kanban. Akkreditierter Kanban Trainer und ausgebildeter Mediator auf Basis der gewaltfreien Kommunikation.",
+    image: coachSebastian,
   },
   {
     id: "sven",
