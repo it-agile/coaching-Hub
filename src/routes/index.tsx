@@ -16,6 +16,7 @@ import heroImg from "@/assets/hero-speicherstadt.jpg";
 import imgTeam from "@/assets/coaching-team.jpg";
 import imgLeadership from "@/assets/coaching-leadership.jpg";
 import coachSebastian from "@/assets/coach-sebastian.jpg";
+import coachStefan from "@/assets/coach-stefan.jpg";
 import coachSven from "@/assets/coach-sven.jpg";
 import coachAlexandra from "@/assets/coach-alexandra.jpg";
 import coachAmelie from "@/assets/coach-amelie.jpg";
@@ -36,15 +37,25 @@ type Coach = {
   image: string;
 };
 
+const FEATURED_COACH: Coach = {
+  id: "sebastian",
+  name: "Sebastian Keller",
+  role: "Agile Coach, Trainer & Mediator",
+  focus: ["Agile Coaching", "Kanban", "Mediation"],
+  quote: "Konflikte sind wertvoll – eine Gelegenheit, gemeinsam zu wachsen.",
+  bio: "Coacht seit 2012 Manager und Teams in agilen Methoden wie Scrum und Kanban. Akkreditierter Kanban Trainer und ausgebildeter Mediator auf Basis der gewaltfreien Kommunikation.",
+  image: coachSebastian,
+};
+
 const COACHES: Coach[] = [
   {
-    id: "sebastian",
-    name: "Sebastian Keller",
-    role: "Agile Coach, Trainer & Mediator",
-    focus: ["Agile Coaching", "Kanban", "Mediation"],
-    quote: "Konflikte sind wertvoll – eine Gelegenheit, gemeinsam zu wachsen.",
-    bio: "Coacht seit 2012 Manager und Teams in agilen Methoden wie Scrum und Kanban. Akkreditierter Kanban Trainer und ausgebildeter Mediator auf Basis der gewaltfreien Kommunikation.",
-    image: coachSebastian,
+    id: "stefan",
+    name: "Stefan Roock",
+    role: "Agile Coach & Scrum-Experte",
+    focus: ["Scrum", "Agile Leadership", "Skalierung"],
+    quote: "Agilität lebt von echter Zusammenarbeit – nicht von Prozessen.",
+    bio: "Begleitet seit den frühen 2000ern Teams und Organisationen bei der Einführung agiler Arbeitsweisen. Autor, Speaker und langjähriger Scrum-Experte mit Fokus auf wirksame Zusammenarbeit.",
+    image: coachStefan,
   },
   {
     id: "sven",
@@ -162,7 +173,7 @@ const STEPS = [
 ];
 
 function Index() {
-  const [activeCoach, setActiveCoach] = useState<Coach>(COACHES[0]);
+  const [activeCoach, setActiveCoach] = useState<Coach>(FEATURED_COACH);
 
   return (
     <div className="min-h-screen bg-background">
