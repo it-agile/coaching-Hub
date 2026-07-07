@@ -218,7 +218,7 @@ function Index() {
               <MapPin className="h-3.5 w-3.5" />
               Wirkungsvolles Coaching aus der Speicherstadt Hamburg
             </div>
-            <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-primary-foreground md:text-7xl">
+            <h1 className="font-display text-5xl leading-[1.05] tracking-tight text-primary-foreground md:text-7xl">
               Menschen machen Agilität.
               <br />
               Unsere <span className="italic text-accent">Coaches</span> machen den Unterschied.
@@ -267,7 +267,7 @@ function Index() {
           <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
             Unsere Coaches
           </div>
-          <h2 className="font-display text-4xl font-semibold md:text-5xl">
+          <h2 className="font-display text-4xl md:text-5xl">
             Kein Beraterpool. <span className="italic text-accent">Ein Team.</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -368,7 +368,7 @@ function Index() {
             <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
               Coaching-Angebot
             </div>
-            <h2 className="font-display text-4xl font-semibold md:text-5xl">
+            <h2 className="font-display text-4xl md:text-5xl">
               Coaching, das im Alltag <span className="italic text-accent">wirkt</span>.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -389,7 +389,7 @@ function Index() {
                 >
                   <o.icon className="h-5 w-5 text-primary-foreground" />
                 </span>
-                <h3 className="font-display text-xl font-semibold">{o.title}</h3>
+                <h3 className="font-display text-xl">{o.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{o.description}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {o.tags.map((tag) => (
@@ -414,7 +414,7 @@ function Index() {
             <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
               So arbeiten wir
             </div>
-            <h2 className="font-display text-4xl font-semibold md:text-5xl">
+            <h2 className="font-display text-4xl md:text-5xl">
               Vom Erstgespräch bis zum <span className="italic text-accent">Loslassen</span>.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -450,7 +450,7 @@ function Index() {
                 >
                   {s.step}
                 </div>
-                <h3 className="mt-3 font-display text-lg font-semibold">{s.title}</h3>
+                <h3 className="mt-3 font-display text-lg">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
               </div>
             ))}
@@ -475,7 +475,7 @@ function Index() {
             <div className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
               Hanseatisch geerdet
             </div>
-            <h2 className="font-display text-4xl font-semibold md:text-5xl">
+            <h2 className="font-display text-4xl md:text-5xl">
               Klare Worte statt Buzzwords – <span className="italic text-accent">seit 2005</span>.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -508,7 +508,7 @@ function Index() {
       <section id="kontakt" className="relative overflow-hidden">
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto max-w-4xl px-6 py-24 text-center">
-          <h2 className="font-display text-4xl font-semibold text-primary-foreground md:text-5xl">
+          <h2 className="font-display text-4xl text-primary-foreground md:text-5xl">
             Lernt den Coach kennen, der zu euch <span className="italic text-accent">passt</span>.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-primary-foreground/80">
