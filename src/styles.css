@@ -28,8 +28,8 @@
   --color-teal: var(--teal);
   --color-border: var(--border);
   --color-ring: var(--ring);
-  --font-display: "Fraunces", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Archivo Narrow", Georgia, serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
 }
 
 :root {
