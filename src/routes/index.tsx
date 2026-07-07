@@ -356,19 +356,34 @@ function Index() {
                 className="aspect-[4/5] w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
               />
               <div
-                className="absolute inset-x-0 bottom-0 p-6"
+                className="absolute inset-x-0 bottom-0 p-6 transition-opacity duration-300 group-hover:opacity-0"
                 style={{
-                background:
+                  background:
                     "linear-gradient(to top, rgba(0, 0, 0, 0.95) 20%, rgba(0, 0, 0, 0.6) 60%, transparent)",
                 }}
               >
-                <div className="font-display text-xl font-semibold">{coach.name}</div>
+                <div className="font-display text-xl font-semibold text-primary-foreground">{coach.name}</div>
                 <div className="text-sm text-accent">{coach.role}</div>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {coach.focus.slice(0, 2).map((f) => (
                     <span
                       key={f}
                       className="rounded-full bg-secondary/80 px-2.5 py-0.5 text-xs text-secondary-foreground backdrop-blur-sm"
+                    >
+                      {f}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="absolute inset-0 flex flex-col justify-end bg-background/90 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="font-display text-xl font-semibold text-primary-foreground">{coach.name}</div>
+                <div className="text-sm text-accent">{coach.role}</div>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">{coach.shortBio}</p>
+                <div className="mt-4 flex flex-wrap gap-1.5">
+                  {coach.focus.map((f) => (
+                    <span
+                      key={f}
+                      className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs text-secondary-foreground"
                     >
                       {f}
                     </span>
