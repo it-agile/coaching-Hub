@@ -22,6 +22,7 @@ import coachAlexandra from "@/assets/coach-alexandra.jpg";
 import coachAmelie from "@/assets/coach-amelie.jpg";
 import coachUrs from "@/assets/coach-urs.jpg";
 import coachMyriam from "@/assets/coach-myriam.jpg";
+import coachTim from "@/assets/coach-tim.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -109,6 +110,16 @@ const COACHES: Coach[] = [
     bio: "Begleitet Organisationen und Teams durch agile Transitionen. Systemische Coach und Organisationsentwicklerin mit einem Schwerpunkt auf agilen Wandlungsprozessen.",
     shortBio: "Systemische Coachin und Organisationsentwicklerin. Begleitet agile Transitionen mit Blick auf das Ganze und die Menschen darin.",
     image: coachMyriam,
+  },
+  {
+    id: "tim",
+    name: "Tim Müller",
+    role: "Agile Coach & Product-Experte",
+    focus: ["Product Discovery", "Scrum", "Team-Coaching"],
+    quote: "Gute Produkte entstehen, wenn Teams echte Probleme lösen dürfen.",
+    bio: "Begleitet Produktteams und Product Owner dabei, Nutzerprobleme zu verstehen, Hypothesen zu prüfen und wirksame Produkte zu entwickeln – von der Discovery bis zur Delivery.",
+    shortBio: "Coach für Produktteams. Verbindet Product Discovery mit agiler Delivery und hilft Teams, die richtigen Dinge richtig zu bauen.",
+    image: coachTim,
   },
 ];
 
