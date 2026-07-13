@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Waves,
@@ -591,7 +592,12 @@ function Index() {
             </span>
             it-agile Coaching
           </div>
-          <div>Willy-Brandt-Straße 1 · 20457 Hamburg · Agile Expertise seit 2005</div>
+          <div className="flex flex-col items-center gap-2 md:flex-row md:gap-6">
+            <span>Willy-Brandt-Straße 1 · 20457 Hamburg · Agile Expertise seit 2005</span>
+            <Link to="/impressum" className="transition-colors hover:text-foreground">
+              Impressum
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
