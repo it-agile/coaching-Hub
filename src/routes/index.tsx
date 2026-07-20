@@ -141,7 +141,7 @@ const OFFERINGS = [
   },
   {
     icon: TrendingUp,
-    title: "Agile Transformation",
+    title: "Organisationsentwicklung",
     description:
       "Strategische Begleitung eures Wandels: flexible Organisationsstrukturen schaffen, Kultur entwickeln und Veränderung tragfähig verankern.",
     tags: ["Change-Architektur", "Org-Design", "Learning Loops"],
