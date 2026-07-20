@@ -227,7 +227,7 @@ function Index() {
             <span className="hidden text-muted-foreground sm:inline">|</span>
             <span className="hidden sm:inline">Coaching-Hub</span>
           </a>
-          <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
+          <nav className="hidden gap-8 text-sm font-medium text-muted-foreground lg:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -252,7 +252,7 @@ function Index() {
               aria-label={mobileNavOpen ? "Menü schließen" : "Menü öffnen"}
               aria-expanded={mobileNavOpen}
               aria-controls="mobile-nav"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-foreground transition-colors hover:bg-muted md:hidden"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-foreground transition-colors hover:bg-muted lg:hidden"
             >
               {mobileNavOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -261,7 +261,7 @@ function Index() {
         {mobileNavOpen && (
           <div
             id="mobile-nav"
-            className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden"
+            className="border-t border-border/60 bg-background/95 backdrop-blur-xl lg:hidden"
           >
             <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4 text-base font-medium">
               {navLinks.map((link) => (
