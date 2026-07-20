@@ -230,15 +230,19 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#top" className="flex items-center gap-3 font-display text-xl font-semibold">
-            <img
-              src={itAgileLogo}
-              alt="it-agile"
-              className="h-10 w-auto"
-            />
+          <div className="flex items-center gap-3 font-display text-xl font-semibold">
+            <a
+              href="https://www.it-agile.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="it-agile Website öffnen"
+              className="transition-opacity hover:opacity-80"
+            >
+              <img src={itAgileLogo} alt="it-agile" className="h-10 w-auto" />
+            </a>
             <span className="hidden text-muted-foreground sm:inline">|</span>
-            <span className="hidden sm:inline">Coaching-Hub</span>
-          </a>
+            <a href="#top" className="hidden sm:inline">Coaching-Hub</a>
+          </div>
           <nav className="hidden gap-8 text-sm font-medium text-muted-foreground lg:flex">
             {navLinks.map((link) => (
               <a
@@ -669,7 +673,15 @@ function Index() {
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row">
           <div className="flex items-center gap-3 font-display text-base font-semibold text-foreground">
-            <img src={itAgileLogo} alt="it-agile" className="h-8 w-auto" />
+            <a
+              href="https://www.it-agile.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="it-agile Website öffnen"
+              className="transition-opacity hover:opacity-80"
+            >
+              <img src={itAgileLogo} alt="it-agile" className="h-8 w-auto" />
+            </a>
             <span className="text-muted-foreground">|</span>
             <span>Coaching-Hub</span>
           </div>
