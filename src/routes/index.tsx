@@ -620,11 +620,12 @@ function Index() {
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="mailto:fabian.dittberner@it-agile.de?subject=Erstgespräch%20Coaching"
+              title="fabian.dittberner@it-agile.de"
               className="inline-flex items-center gap-2 rounded-full px-8 py-4 text-sm font-semibold text-primary-foreground shadow-lg transition-opacity hover:opacity-90"
               style={{ background: "var(--gradient-copper)" }}
             >
               <Mail className="h-4 w-4" />
-              Erstgespräch per E-Mail
+              fabian.dittberner@it-agile.de
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
