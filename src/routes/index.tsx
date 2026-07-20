@@ -205,6 +205,13 @@ const STEPS = [
 
 function Index() {
   const [activeCoach, setActiveCoach] = useState<Coach>(FEATURED_COACH);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const navLinks = [
+    { href: "#coaches", label: "Coaches" },
+    { href: "#angebot", label: "Coaching-Angebot" },
+    { href: "#ablauf", label: "So arbeiten wir" },
+    { href: "#hamburg", label: "Hamburg" },
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -221,27 +228,63 @@ function Index() {
             <span className="hidden sm:inline">Coaching-Hub</span>
           </a>
           <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
-            <a href="#coaches" className="transition-colors hover:text-foreground">
-              Coaches
-            </a>
-            <a href="#angebot" className="transition-colors hover:text-foreground">
-              Coaching-Angebot
-            </a>
-            <a href="#ablauf" className="transition-colors hover:text-foreground">
-              So arbeiten wir
-            </a>
-            <a href="#hamburg" className="transition-colors hover:text-foreground">
-              Hamburg
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
-          <a
-            href="#kontakt"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Erstgespräch
-            <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="#kontakt"
+              className="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              Erstgespräch
+              <ArrowRight className="h-4 w-4" />
+            </a>
+            <button
+              type="button"
+              onClick={() => setMobileNavOpen((v) => !v)}
+              aria-label={mobileNavOpen ? "Menü schließen" : "Menü öffnen"}
+              aria-expanded={mobileNavOpen}
+              aria-controls="mobile-nav"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border/60 text-foreground transition-colors hover:bg-muted md:hidden"
+            >
+              {mobileNavOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </button>
+          </div>
         </div>
+        {mobileNavOpen && (
+          <div
+            id="mobile-nav"
+            className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden"
+          >
+            <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4 text-base font-medium">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileNavOpen(false)}
+                  className="rounded-md px-3 py-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href="#kontakt"
+                onClick={() => setMobileNavOpen(false)}
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 sm:hidden"
+              >
+                Erstgespräch
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero */}
