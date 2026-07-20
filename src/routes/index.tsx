@@ -12,6 +12,7 @@ import {
   MessageCircle,
   Layers,
   Quote,
+  Code2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-speicherstadt.jpg";
 import imgTeam from "@/assets/coaching-team.jpg";
@@ -166,6 +167,13 @@ const OFFERINGS = [
     description:
       "Wenn viele Teams liefern sollen, entscheiden Abhängigkeiten. Wir gestalten Skalierung mit Prinzipien statt Rezeptbuch.",
     tags: ["Scaling", "Team-Schnitt", "Abhängigkeiten"],
+  },
+  {
+    icon: Code2,
+    title: "Technisches Coaching & Exzellenz",
+    description:
+      "Nachhaltige Agilität braucht solides Handwerk: Wir coachen Entwicklungsteams in Clean Code, TDD, Refactoring und Continuous Delivery – direkt am eigenen Code.",
+    tags: ["Clean Code", "TDD", "Continuous Delivery"],
   },
 ];
 
