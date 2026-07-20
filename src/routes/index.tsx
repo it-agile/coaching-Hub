@@ -15,6 +15,8 @@ import {
   Code2,
   Menu,
   X,
+  Phone,
+  Mail,
 } from "lucide-react";
 import heroImg from "@/assets/hero-speicherstadt.jpg";
 import itAgileLogo from "@/assets/it-agile-logo.svg";
