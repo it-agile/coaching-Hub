@@ -15,6 +15,7 @@ import {
   Code2,
 } from "lucide-react";
 import heroImg from "@/assets/hero-speicherstadt.jpg";
+import itAgileLogo from "@/assets/it-agile-logo.svg";
 import imgTeam from "@/assets/coaching-team.jpg";
 import imgLeadership from "@/assets/coaching-leadership.jpg";
 import coachSebastian from "@/assets/coach-sebastian.jpg";
@@ -208,14 +209,14 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <a href="#top" className="flex items-center gap-2 font-display text-xl font-semibold">
-            <span
-              className="grid h-8 w-8 place-items-center rounded-md"
-              style={{ background: "var(--gradient-copper)" }}
-            >
-              <Waves className="h-4 w-4 text-primary-foreground" />
-            </span>
-            it-agile Coaching-Hub
+          <a href="#top" className="flex items-center gap-3 font-display text-xl font-semibold">
+            <img
+              src={itAgileLogo}
+              alt="it-agile"
+              className="h-10 w-auto"
+            />
+            <span className="hidden text-muted-foreground sm:inline">|</span>
+            <span className="hidden sm:inline">Coaching-Hub</span>
           </a>
           <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
             <a href="#coaches" className="transition-colors hover:text-foreground">
@@ -591,14 +592,10 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row">
-          <div className="flex items-center gap-2 font-display text-base font-semibold text-foreground">
-            <span
-              className="grid h-7 w-7 place-items-center rounded-md"
-              style={{ background: "var(--gradient-copper)" }}
-            >
-              <Waves className="h-3.5 w-3.5 text-primary-foreground" />
-            </span>
-            it-agile Coaching
+          <div className="flex items-center gap-3 font-display text-base font-semibold text-foreground">
+            <img src={itAgileLogo} alt="it-agile" className="h-8 w-auto" />
+            <span className="text-muted-foreground">|</span>
+            <span>Coaching-Hub</span>
           </div>
           <div className="flex flex-col items-center gap-2 md:flex-row md:gap-6">
             <span>Willy-Brandt-Straße 1 · 20457 Hamburg · Agile Expertise seit 2005</span>
