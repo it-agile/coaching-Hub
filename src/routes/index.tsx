@@ -207,7 +207,7 @@ function Index() {
             >
               <Waves className="h-4 w-4 text-primary-foreground" />
             </span>
-            it-agile Coaching
+            it-agile Coaching-Hub
           </a>
           <nav className="hidden gap-8 text-sm font-medium text-muted-foreground md:flex">
             <a href="#coaches" className="transition-colors hover:text-foreground">
