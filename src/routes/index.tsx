@@ -13,6 +13,8 @@ import {
   Layers,
   Quote,
   Code2,
+  Menu,
+  X,
 } from "lucide-react";
 import heroImg from "@/assets/hero-speicherstadt.jpg";
 import itAgileLogo from "@/assets/it-agile-logo.svg";
