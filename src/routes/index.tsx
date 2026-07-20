@@ -33,6 +33,16 @@ import coachTim from "@/assets/coach-tim.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { property: "og:image", content: "/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "it-agile Coaching-Hub – Wirkungsvolles Coaching aus der Speicherstadt Hamburg" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "/og-image.jpg" },
+    ],
+  }),
 });
 
 type Coach = {
