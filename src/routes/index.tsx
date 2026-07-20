@@ -619,12 +619,20 @@ function Index() {
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:info@it-agile.de"
+              href="mailto:fabian.dittberner@it-agile.de?subject=Erstgespräch%20Coaching"
               className="inline-flex items-center gap-2 rounded-full px-8 py-4 text-sm font-semibold text-primary-foreground shadow-lg transition-opacity hover:opacity-90"
               style={{ background: "var(--gradient-copper)" }}
             >
-              Erstgespräch vereinbaren
+              <Mail className="h-4 w-4" />
+              Erstgespräch per E-Mail
               <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="tel:+494041358480"
+              className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-8 py-4 text-sm font-semibold text-primary-foreground backdrop-blur-md transition-colors hover:bg-primary-foreground/20"
+            >
+              <Phone className="h-4 w-4" />
+              +49 40 41 358 48-0
             </a>
             <a
               href="#coaches"
@@ -633,6 +641,15 @@ function Index() {
               Zu den Coaches
             </a>
           </div>
+          <p className="mt-6 text-sm text-primary-foreground/70">
+            Direkter Kontakt:{" "}
+            <a
+              href="mailto:fabian.dittberner@it-agile.de"
+              className="underline underline-offset-4 hover:text-primary-foreground"
+            >
+              fabian.dittberner@it-agile.de
+            </a>
+          </p>
         </div>
       </section>
 
