@@ -416,6 +416,7 @@ function Index() {
             <button
               key={coach.id}
               type="button"
+              aria-label={`Coach anzeigen: ${coach.name}, ${coach.role}`}
               onClick={() => {
                 setActiveCoach(coach);
                 document.getElementById("coaches")?.scrollIntoView({ behavior: "smooth" });
