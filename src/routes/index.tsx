@@ -602,6 +602,9 @@ function Index() {
             <Link to="/impressum" className="transition-colors hover:text-foreground">
               Impressum
             </Link>
+            <Link to="/datenschutz" className="transition-colors hover:text-foreground">
+              Datenschutz
+            </Link>
           </div>
         </div>
       </footer>
