@@ -81,11 +81,11 @@ const COACHES: Coach[] = [
   {
     id: "sven",
     name: "Sven Günther",
-    role: "Geschäftsführer & Leadership Coach",
+    role: "Leadership Coach",
     focus: ["Agile Leadership", "Management 3.0", "Skalierung"],
     quote: "Führung heißt: Kontext schaffen, nicht kontrollieren.",
     bio: "Coacht Führungskräfte und Managementteams großer Organisationen auf dem Weg zu wirksamer, agiler Führung.",
-    shortBio: "Geschäftsführer und Führungs-Coach. Erfahrener Begleiter auf dem Weg zu agilen Führungskulturen und selbstverantwortlichen Organisationen.",
+    shortBio: "Führungs-Coach. Erfahrener Begleiter auf dem Weg zu agilen Führungskulturen und selbstverantwortlichen Organisationen.",
     image: coachSven,
   },
   {
