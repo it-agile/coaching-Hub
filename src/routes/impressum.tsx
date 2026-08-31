@@ -103,13 +103,13 @@ function ImpressumPage() {
             </div>
             <div>
               <dt className="font-semibold text-foreground">Geschäftsführung</dt>
-              <dd>Sven Günther, Stefan Roock</dd>
+              <dd>Sebastian Keller, Urs Reupke</dd>
             </div>
             <div>
               <dt className="font-semibold text-foreground">
                 Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV
               </dt>
-              <dd>Sven Günther, Stefan Roock</dd>
+              <dd>Sebastian Keller, Urs Reupke</dd>
             </div>
           </dl>
         </section>
