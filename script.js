@@ -33,31 +33,56 @@
   var featuredBio = featured.querySelector(".bio");
   var featuredTags = featured.querySelector(".tag-row");
 
-  document.querySelectorAll(".coach-card").forEach(function (card) {
+  var cards = document.querySelectorAll(".coach-card");
+
+  function showCoach(card) {
+    var data = card.dataset;
+
+    cards.forEach(function (c) {
+      c.classList.remove("active");
+    });
+    card.classList.add("active");
+
+    featuredImg.src = data.image;
+    featuredImg.alt = "Portrait von " + data.name;
+    featuredQuote.textContent = "„" + data.quote + "“";
+    featuredName.textContent = data.name;
+    featuredRole.textContent = data.role;
+    featuredBio.textContent = data.bio;
+
+    featuredTags.innerHTML = "";
+    data.focus.split("|").forEach(function (f) {
+      var span = document.createElement("span");
+      span.className = "tag";
+      span.textContent = f;
+      featuredTags.appendChild(span);
+    });
+  }
+
+  cards.forEach(function (card) {
     card.addEventListener("click", function () {
-      var data = card.dataset;
-
-      document.querySelectorAll(".coach-card").forEach(function (c) {
-        c.classList.remove("active");
-      });
-      card.classList.add("active");
-
-      featuredImg.src = data.image;
-      featuredImg.alt = "Portrait von " + data.name;
-      featuredQuote.textContent = "„" + data.quote + "“";
-      featuredName.textContent = data.name;
-      featuredRole.textContent = data.role;
-      featuredBio.textContent = data.bio;
-
-      featuredTags.innerHTML = "";
-      data.focus.split("|").forEach(function (f) {
-        var span = document.createElement("span");
-        span.className = "tag";
-        span.textContent = f;
-        featuredTags.appendChild(span);
-      });
-
+      showCoach(card);
       document.getElementById("coaches").scrollIntoView({ behavior: "smooth" });
     });
   });
+
+  // Beim Laden einen zufälligen Coach zeigen, möglichst nicht denselben wie beim letzten Besuch
+  if (cards.length > 0) {
+    var lastName = null;
+    try {
+      lastName = localStorage.getItem("featuredCoach");
+    } catch (e) {}
+
+    var candidates = Array.prototype.filter.call(cards, function (c) {
+      return c.dataset.name !== lastName;
+    });
+    if (candidates.length === 0) candidates = Array.prototype.slice.call(cards);
+
+    var randomCard = candidates[Math.floor(Math.random() * candidates.length)];
+    showCoach(randomCard);
+
+    try {
+      localStorage.setItem("featuredCoach", randomCard.dataset.name);
+    } catch (e) {}
+  }
 })();
