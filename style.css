@@ -936,18 +936,6 @@ section {
   gap: 1rem;
 }
 
-.btn-cta-mail {
-  background: var(--gradient-copper);
-  color: var(--primary-foreground);
-  padding: 1rem 2rem;
-  font-size: 0.875rem;
-  box-shadow: var(--shadow-warm);
-}
-
-.btn-cta-mail:hover {
-  opacity: 0.9;
-}
-
 .btn-cta-outline {
   border: 1px solid rgba(235, 235, 223, 0.25);
   background: rgba(235, 235, 223, 0.1);
@@ -958,22 +946,9 @@ section {
 }
 
 .btn-cta-outline:hover {
-  background: rgba(235, 235, 223, 0.2);
-}
-
-.cta-direct {
-  margin-top: 1.5rem;
-  font-size: 0.875rem;
-  color: rgba(235, 235, 223, 0.7);
-}
-
-.cta-direct a {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.cta-direct a:hover {
-  color: var(--primary-foreground);
+  background: var(--gradient-copper);
+  border-color: transparent;
+  box-shadow: var(--shadow-warm);
 }
 
 /* Footer */
